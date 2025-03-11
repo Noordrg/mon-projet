@@ -12,3 +12,7 @@ app.listen(port, () => {
 app.get('/about', (req, res) => {
     res.send('About us');
 });
+// Ajout d'une nouvelle route pour afficher un message personnalisé
+app.get('/hello', (req, res) => {
+    res.send('Hello, this is a new feature!');
+});
